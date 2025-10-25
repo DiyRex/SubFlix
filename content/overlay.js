@@ -336,10 +336,45 @@ class SubtitleOverlay {
     if (!this.container) return;
 
     if (isFullscreen) {
-      // Adjust z-index for fullscreen
-      this.container.style.zIndex = '9999999';
+      // Find the fullscreen element
+      const fullscreenElement =
+        document.fullscreenElement ||
+        document.webkitFullscreenElement ||
+        document.mozFullScreenElement ||
+        document.msFullscreenElement;
+
+      if (fullscreenElement) {
+        // Store visibility state
+        const wasVisible = this.isVisible;
+
+        // Move overlay inside fullscreen element
+        fullscreenElement.appendChild(this.container);
+
+        // Increase z-index for fullscreen
+        this.container.style.zIndex = '9999999';
+
+        // Restore visibility if needed
+        if (wasVisible) {
+          this.container.classList.remove('hidden');
+        }
+
+        Utils.log('Subtitle overlay moved to fullscreen element');
+      }
     } else {
-      this.container.style.zIndex = '999999';
+      // Move overlay back to body when exiting fullscreen
+      if (this.container.parentElement !== document.body) {
+        const wasVisible = this.isVisible;
+
+        document.body.appendChild(this.container);
+        this.container.style.zIndex = '999999';
+
+        // Restore visibility if needed
+        if (wasVisible) {
+          this.container.classList.remove('hidden');
+        }
+
+        Utils.log('Subtitle overlay moved back to body');
+      }
     }
   }
 

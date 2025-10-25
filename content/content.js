@@ -163,9 +163,11 @@ function attachToVideo(video) {
   videoElement.addEventListener('timeupdate', handleTimeUpdate);
   videoElement.addEventListener('ended', handleEnded);
 
-  // Check for fullscreen changes
+  // Check for fullscreen changes (all browser variants)
   document.addEventListener('fullscreenchange', handleFullscreenChange);
   document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+  document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+  document.addEventListener('msfullscreenchange', handleFullscreenChange);
 
   // Initialize overlay if not already done
   subtitleOverlay.init();
