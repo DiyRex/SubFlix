@@ -1,0 +1,71 @@
+/**
+ * SubFlix - Netflix Injection Styles
+ * Additional styles for Netflix page integration
+ */
+
+/* Ensure subtitle overlay is always on top of Netflix controls */
+.subflix-subtitle-container {
+  z-index: 999999 !important;
+}
+
+/* Hide overlay when Netflix native subtitles menu is open */
+.watch-video--player-view[data-ui-name="subtitle-menu-open"] .subflix-subtitle-container {
+  display: none !important;
+}
+
+/* Adjust position when Netflix player controls are visible */
+.watch-video--player-view:not(.player-view--hide-controls) .subflix-subtitle-container.position-bottom {
+  bottom: 100px !important;
+}
+
+/* Fullscreen adjustments */
+.watch-video--player-view.player-view--is-fullscreen .subflix-subtitle-container {
+  z-index: 9999999 !important;
+}
+
+/* Ensure proper rendering on different Netflix themes */
+.watch-video--player-view .subflix-subtitle-text {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent subtitle from interfering with click events */
+.subflix-subtitle-container,
+.subflix-subtitle-container * {
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+/* Smooth transition when Netflix controls appear/disappear */
+.subflix-subtitle-container {
+  transition: bottom 0.3s ease, opacity 0.2s ease !important;
+}
+
+/* Fix for Netflix's aspect ratio containers */
+.watch-video .subflix-subtitle-container {
+  position: fixed !important;
+}
+
+/* Ensure subtitles are visible on all Netflix backgrounds */
+.subflix-subtitle-text {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .subflix-subtitle-text {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 1),
+                 -1px -1px 3px rgba(0, 0, 0, 1) !important;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .subflix-subtitle-container,
+  .subflix-subtitle-text {
+    transition: none !important;
+    animation: none !important;
+  }
+}

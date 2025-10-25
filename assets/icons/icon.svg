@@ -1,0 +1,15 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="#E50914"/>
+
+  <!-- Subtitle lines icon -->
+  <rect x="20" y="80" width="88" height="12" rx="4" fill="white"/>
+  <rect x="30" y="96" width="68" height="10" rx="3" fill="white" opacity="0.8"/>
+
+  <!-- Play button / "S" shape -->
+  <path d="M 40 25 Q 50 20, 60 25 Q 70 30, 70 40 Q 70 50, 60 55 Q 70 60, 70 70 Q 70 80, 60 85 Q 50 90, 40 85"
+        stroke="white"
+        stroke-width="8"
+        fill="none"
+        stroke-linecap="round"/>
+</svg>

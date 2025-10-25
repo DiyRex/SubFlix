@@ -1,0 +1,134 @@
+1
+00:00:01,000 --> 00:00:04,500
+Welcome to SubFlix!
+SubFlix වෙත සාදරයෙන් පිළිගනිමු!
+
+2
+00:00:05,000 --> 00:00:08,500
+This is a sample subtitle file
+for testing the extension.
+
+3
+00:00:09,000 --> 00:00:12,000
+මෙය දිගුව පරීක්ෂා කිරීම සඳහා
+නියැදි උපශීර්ෂ ගොනුවකි.
+
+4
+00:00:13,000 --> 00:00:16,500
+You can adjust the timing
+using the control buttons.
+
+5
+00:00:17,000 --> 00:00:20,500
+ඔබට පාලන බොත්තම් භාවිතා කරමින්
+කාලය සකස් කළ හැක.
+
+6
+00:00:21,500 --> 00:00:25,000
+Try changing the font size,
+background, and text color!
+
+7
+00:00:26,000 --> 00:00:29,500
+SubFlix supports Unicode characters:
+العربية • 中文 • 日本語 • 한글
+
+8
+00:00:30,500 --> 00:00:34,000
+Multi-line subtitles work perfectly.
+Line breaks are preserved.
+Like this!
+
+9
+00:00:35,000 --> 00:00:38,500
+කර්තෘ: ඔබේ නම
+Subtitle by: Your Name
+
+10
+00:00:39,500 --> 00:00:43,000
+Keyboard shortcuts:
+Ctrl+Shift+S to toggle
+
+11
+00:00:44,000 --> 00:00:47,500
+Ctrl+← / Ctrl+→
+to adjust timing quickly
+
+12
+00:00:48,500 --> 00:00:52,000
+Perfect for watching content
+in unsupported languages!
+
+13
+00:00:53,000 --> 00:00:56,500
+අසমත් භාෂාවලින් අන්තර්ගතය නැරඹීමට
+හොඳ මෙවලමකි!
+
+14
+00:00:57,500 --> 00:01:01,000
+Settings are automatically saved
+and persisted.
+
+15
+00:01:02,000 --> 00:01:05,500
+Per-video delay memory keeps
+your timing adjustments.
+
+16
+00:01:06,500 --> 00:01:10,000
+Test with different positions:
+Top, Middle, or Bottom
+
+17
+00:01:11,000 --> 00:01:14,500
+Adjust background opacity
+for better readability.
+
+18
+00:01:15,500 --> 00:01:19,000
+Enable shadows for text
+that pops on any background!
+
+19
+00:01:20,000 --> 00:01:23,500
+Export your settings
+to share or backup.
+
+20
+00:01:24,500 --> 00:01:28,000
+Import settings
+from a JSON file.
+
+21
+00:01:29,000 --> 00:01:32,500
+Very long subtitle lines will automatically wrap to the next line and maintain proper formatting even with extended text content that would normally exceed the display width.
+
+22
+00:01:33,500 --> 00:01:37,000
+Special characters work too:
+™ © ® ℗ ♪ ♫ ☺ ❤
+
+23
+00:01:38,000 --> 00:01:41,500
+Emojis are supported:
+😀 🎬 📺 🎭 🎪
+
+24
+00:01:42,500 --> 00:01:46,000
+This extension is open source!
+Contribute on GitHub.
+
+25
+00:01:47,000 --> 00:01:50,500
+Thank you for using SubFlix!
+SubFlix භාවිතා කිරීම සඳහා ස්තූතියි!
+
+26
+00:01:51,500 --> 00:01:55,000
+Enjoy your viewing experience
+with custom subtitles!
+
+27
+00:01:56,000 --> 00:02:00,000
+End of sample subtitles.
+නියැදි උපශීර්ෂ අවසානය.
